@@ -12,7 +12,7 @@
 | X | [@kandmybike](https://x.com/kandmybike)（フォロワー約1.5万人） |
 | note | [畠山謙人│AI税理士 / 自走するバックオフィス](https://note.com/kento_0724) |
 | YouTube | [畠山謙人チャンネル](https://www.youtube.com/@kentohatakeyama) |
-| Email | from.k.0326@gmail.com |
+| Email | khatakeyama@cpa-office.xyz |
 
 ## 資格
 

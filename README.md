@@ -17,13 +17,19 @@
 | `robots.txt` | 全クローラ許可＋AI向け一次情報源の案内 |
 | `.nojekyll` | GitHub PagesのJekyll処理を無効化 |
 
-## 公開手順（未実施）
+## 公開状況（2026-07-29 公開済み）
 
-1. GitHubで公開リポジトリ `hatakeyama-ai-tax` を新規作成（個人アカウント側）
-2. このフォルダの中身をそのままpush
-3. Settings → Pages → Branch: `main` / root で公開
-4. 公開URLが確定したら `index.html` の `canonical`・OGP・JSON-LDの `url` を実URLに差し替える
-   （現状は `https://fromk0326-boop.github.io/hatakeyama-ai-tax/` を仮置き。独自ドメインにするならここを変更）
+- 公開URL: https://fromk0326-boop.github.io/hatakeyama-ai-tax/
+- リポジトリ: https://github.com/fromk0326-boop/hatakeyama-ai-tax
+- 配信ブランチ: `gh-pages`（push時の自動有効化で公開。`main` と同内容）
+
+### 更新の反映手順
+
+1. このフォルダ（ai-management側が正本）を編集
+2. 公開リポジトリへ `main` と `gh-pages` の両方をpush:
+   `git push origin main && git push origin main:gh-pages`
+3. 独自ドメインに切り替える場合は、Settings → Pages でカスタムドメイン設定＋
+   各HTMLの `canonical`・JSON-LDの `url` を差し替える
 
 ## 運用ルール
 

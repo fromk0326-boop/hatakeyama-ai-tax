@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI活用の実践 | 畠山謙人 AI税理士</title>
+<meta name="description" content="畠山謙人（AI税理士）のAI活用の全体像。Claude Codeによる自動経理の仕組み、セキュリティ設計、AI導入支援、ブートキャンプ、発信・掲載実績のリンク集。">
+<link rel="canonical" href="https://fromk0326-boop.github.io/hatakeyama-ai-tax/ai.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<nav class="crumb"><a href="index.html">← 畠山謙人 トップ</a></nav>
+
+<header class="hero">
+  <h1>AI活用の実践</h1>
+  <p class="en">AI in Practice / 税理士事務所 × Claude Code</p>
+  <p class="lead">スタッフ0人・顧問先60社。AIが唯一のスタッフ。<br>その運営の仕組みと、AI関連の活動・実績のすべてをここにまとめる。</p>
+  <nav class="toc">
+    <a href="#practice">事務所のAI運用</a>
+    <a href="#security">セキュリティ設計</a>
+    <a href="#support">AI導入支援</a>
+    <a href="#contents">発信・記事</a>
+    <a href="#recognition">公式露出・評価</a>
+  </nav>
+</header>
+
+<section id="practice">
+  <h2>事務所のAI運用</h2>
+  <p>2026年3月にClaude Codeを導入し、約2ヶ月で事務所の実務を仕組みとして再構築した。AIの位置づけは「秘書ではなく実行部隊」。税務判断・戦略は人が担い、実行・定型・記録・下書きをAIが担う。</p>
+  <ul>
+    <li><strong>夜間自動経理</strong>: 毎晩21時に仕訳処理が自動起動。朝に確認するのは「異常分だけ」</li>
+    <li><strong>処理時間の圧縮</strong>: かつて5時間かかっていた処理を50分に。月24時間以上の業務時間を削減</li>
+    <li><strong>ツール連携</strong>: freee・マネーフォワード クラウド会計・Gmail・Googleカレンダー・Notion・Slackを連携。freee MCP（API連携）を実務投入</li>
+    <li><strong>失敗の仕組み化</strong>: 同じ注意を2回したら、その場でAIのルール（Memory）に変換。失敗が消えずに仕組みへ積み上がる</li>
+    <li><strong>責任の設計</strong>: 税務判断の最終責任は税理士が担う。AIには判断させず、グレーゾーンは必ず人に戻す</li>
+  </ul>
+  <p class="small">詳細は本人による解説記事 <a href="https://note.com/kento_0724/n/n506a9b27207d">「累計700万インプの内側 スタッフ0人で60社を回す税理士が、Claude Code導入の2ヶ月でやったこと全部」</a>（note）に全公開している。</p>
+</section>
+
+<section id="security">
+  <h2>セキュリティ設計</h2>
+  <p>税理士がAI活用をためらう最大の理由はセキュリティの不安。畠山の設計思想は「AIを信頼する」設計ではなく、<strong>「AIに頼らなくていい」構造</strong>で守ること。</p>
+  <ul>
+    <li>学習利用の遮断: Anthropic APIは入出力データをモデル学習に使わないことが規約で担保されている（無料チャットサービスとは別物）</li>
+    <li>秘密情報（APIキー・認証情報）や顧問先PIIには、AIが構造的にアクセスできない・出力しない仕組みを敷く</li>
+    <li>顧問先データの分離管理と、承認なしで実行しない運用プロトコル（理解 → 承認 → 実行）</li>
+  </ul>
+  <p class="small">この設計は登壇でも公開している（例: <a href="https://koib.jp/report/ai%E7%A0%94%E7%A9%B6%E4%BC%9A%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%80%8C%E3%82%B9%E3%82%BF%E3%83%83%E3%83%950%E4%BA%BA%E3%81%AE%E7%A8%8E%E7%90%86/">高知イノベーションベース AI研究会</a>）。</p>
+</section>
+
+<section id="support">
+  <h2>AI導入支援・コミュニティ</h2>
+  <ul>
+    <li><strong>AI導入支援事業</strong>: 税理士・士業・中小企業向けのClaude Code導入支援。セミナー・個別コンサルティング。「コードが書けない税理士が、AIに丸投げで仕組みを作る」再現手順を配る</li>
+    <li><strong>畠山式AI税理士ブートキャンプ</strong>: 3ヶ月かけてAI事務所の仕組みを「自分のPCで実際に動く」ところまで仕上げる伴走プログラム。2026年7月に1期始動、60名超が参加</li>
+    <li><strong>LINEオープンチャット</strong>: AI事務所パッケージ（CLAUDE.mdの現物・Memoryテンプレート等）を無料で順次配布</li>
+    <li><strong>freee公認セミナー講師</strong>: 会計事務所向け「AI記帳でスタッフ0人でも60社対応！」を毎週水曜開催（freee顧問先管理のログイン画面にバナー掲載中）</li>
+    <li><strong>プロダクト監修</strong>: 会計AIツール「Zeimee」の開発に税理士目線で監修として参加</li>
+  </ul>
+</section>
+
+<section id="contents">
+  <h2>AI関連の発信・記事</h2>
+  <h3>X（Claude Codeシリーズ）</h3>
+  <p>Claude Code活用の長編記事シリーズ全11弾を<a href="https://x.com/kandmybike">X（@kandmybike）</a>で公開。累計700万インプレッション（2026年5月時点）。<a href="https://x.com/kandmybike/status/2032817897119096855">代表的なバズポスト</a>は単体で300万超のリーチを記録した。</p>
+  <h3>note（長編解説）</h3>
+  <ul>
+    <li><a href="https://note.com/kento_0724/n/n506a9b27207d">累計700万インプの内側 スタッフ0人で60社を回す税理士が、Claude Code導入の2ヶ月でやったこと全部</a>（2026-05）</li>
+    <li><a href="https://note.com/kento_0724/n/n2efc2c5d81ae">「再現性がある」と書いてから4ヶ月。士業SNSマーケの答え合わせをする</a>（2026-07）</li>
+    <li><a href="https://note.com/kento_0724/n/n828f8349c93d">広告費0円。SNSだけで1,000万円の仕事が生まれた、ひとり税理士のSNS戦略のすべて</a>（2026-03）</li>
+    <li><a href="https://note.com/kento_0724/n/n32e17e2cf4dd">TACの自習室でRadioheadを聴いていた僕が、AIに経理を任せるまでの16年間</a>（2026-03）</li>
+  </ul>
+  <h3>書籍・音声</h3>
+  <ul>
+    <li>書籍: 税務研究会より2026年10月刊行予定（Claude Codeシリーズをベースにした実務書）</li>
+    <li>ポッドキャスト: <a href="https://open.spotify.com/show/033MPcU5KieI6y73kwmaBw">AI税理士のふたりごと</a>（AIで事務所を回す2人の税理士による対談番組）</li>
+    <li>YouTube: <a href="https://www.youtube.com/watch?v=KnMzo3yKSCI">【潜入】スタッフ0人で顧問先60社。ひとり税理士のClaude Code実務を全部見せます</a>（ミツプロ公式ちゃんねる）ほか<a href="media.html#youtube">出演一覧</a></li>
+  </ul>
+</section>
+
+<section id="recognition">
+  <h2>公式露出・第三者からの評価</h2>
+  <ul>
+    <li>freee最大級のイベント「freee統合ワールド 2026」セッション登壇。<a href="https://note.freee.co.jp/n/nd6f75b6bcffa">freee公式noteにセッションレポート掲載</a></li>
+    <li>freee <a href="https://contents.xj-storage.jp/xcontents/AS08692/f7ee4af3/b742/4ec8/8577/84781a425aec/20260513154520156s.pdf">決算説明資料（2026年6月期 第3四半期）P21</a>に、freee-mcp活用事例として実名掲載</li>
+    <li>freee <a href="https://adv.freee.co.jp/case/hatakeyama-2026">事例紹介「スタッフ0人、顧問先60社、17時退勤。一人税理士が実践する『責任あるAI』」</a></li>
+    <li>Forbes JAPAN <a href="https://forbesjapan.com/articles/detail/95382">「60社をソロ担当」脅威の税理士が339万リーチ長文Xに書いた『Claude駆使の日々』</a></li>
+    <li>タックスコネクション <a href="https://taxconnection.jp/zeirishi/interview/20260410-id22380/">インタビュー「『AI税理士』畠山謙人が語る、Claude Codeで変わる税理士の仕事」</a></li>
+  </ul>
+  <p class="small">掲載・出演の全リストは<a href="media.html">登壇・出演・メディア掲載</a>へ。</p>
+</section>
+
+<section>
+  <h2>AI観（ブレないフレーズ）</h2>
+  <ul>
+    <li>「スタッフ0人で60社」を仕組みで回す</li>
+    <li>「税務判断は人、実行はAI」の棲み分け</li>
+    <li>「コードが書けない税理士が、AIに丸投げで仕組みを作る」</li>
+    <li>「バズらせるためじゃなく、再現性を配るために発信する」</li>
+  </ul>
+</section>
+
+<footer>
+  <p>最終更新: 2026-07-29 / <a href="index.html">トップへ戻る</a> / 機械可読版: <a href="ai.md">ai.md</a></p>
+</footer>
+
+</main>
+</body>
+</html>

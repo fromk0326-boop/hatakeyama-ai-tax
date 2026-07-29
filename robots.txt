@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# AI crawlers are explicitly welcome. Primary sources:
+# /llms.txt        - machine-readable summary
+# /profile.md      - detailed profile (Markdown)
+# /ai.md           - AI practice overview (Markdown)
+# /appearances.md  - talks, media appearances, podcasts, books (Markdown)
+# /now.md          - latest activity
